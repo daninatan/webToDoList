@@ -3,7 +3,7 @@ let user = document.getElementById("user")
 let password = document.getElementById("password")
 let login = false
 
-const loginURL = "http://localhost:8080/login"
+const loginURL = "webtodolistbackend-production.up.railway.app/login"
 
 loginButton.addEventListener("click", function() {
     const userData ={
