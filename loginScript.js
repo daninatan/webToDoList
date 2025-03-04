@@ -3,7 +3,7 @@ let user = document.getElementById("user")
 let password = document.getElementById("password")
 let login = false
 
-const loginURL = "webtodolistbackend-production.up.railway.app/login"
+const loginURL = "https://webtodolistbackend-production.up.railway.app/login"
 
 loginButton.addEventListener("click", function() {
     const userData ={

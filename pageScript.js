@@ -3,8 +3,8 @@ taskNameField = document.getElementById('text')
 let tasksList = {}
 let lastId = 1
 
-const addURL = "webtodolistbackend-production.up.railway.app/toDoList/addTask"
-const getURL = "webtodolistbackend-production.up.railway.app/toDoList/getTasks"
+const addURL = "https://webtodolistbackend-production.up.railway.app/toDoList/addTask"
+const getURL = "https://webtodolistbackend-production.up.railway.app/toDoList/getTasks"
 
 getTasks()
 
@@ -56,7 +56,7 @@ function addTask(){
 function removeTask(e){
     e.parentElement.remove()
     const data = e.parentElement.querySelector(".task").innerHTML
-    const deleteURL = `webtodolistbackend-production.up.railway.app/toDoList/deleteTask/${tasksList[data]}`
+    const deleteURL = `https://webtodolistbackend-production.up.railway.app/toDoList/deleteTask/${tasksList[data]}`
     
 
     fetch(deleteURL, {
