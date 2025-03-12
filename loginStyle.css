@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: bisque;
+    background-color: #1a1a1a;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,16 +21,17 @@ body{
     height: 60vh;
     min-width: 300px;
     min-height: 200px;
-    background-color: rgb(251, 251, 251);
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    background-color: #2D2A32;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     overflow: hidden;
 }
 
 #login-title{
-    font-size: 200%;
+    font-size: 250%;
     margin-top: 10%;
     align-self: center;
     justify-self: center;
+    color: #c82af9;
 }
 
 #user{
@@ -41,9 +42,15 @@ body{
     padding-left: 10px;
     margin-bottom: 15%;
     font-size: 200%;
-    border-bottom: solid 1px black;
-    background-color: rgb(251, 251, 251);
+    border-bottom: solid 1px #8A2BE2;
+    background: none;
     overflow: hidden;
+    color: #ffffff;
+}
+
+#user::placeholder{
+    color: #ffffff;
+    font-family: sans-serif;
 }
 
 #user:focus{
@@ -56,9 +63,14 @@ body{
     align-self: center;
     padding-left: 10px;
     font-size: 200%;
-    border-bottom: solid 1px black;
-    background-color: rgb(251, 251, 251);
+    border-bottom: solid 1px #8A2BE2;
+    background: none;
     overflow: hidden;
+    color: #ffffff
+}
+
+#password::placeholder{
+    color: #ffffff;
 }
 
 #password:focus{
@@ -66,13 +78,15 @@ body{
 }
 
 #login-button{
-    background-color: #eea987;
+    background-color: #8A2BE2;
     font-size: 150%;
     color: rgb(255, 255, 255);
     align-self: center;
     width: 30%;
     height: 10%;
-    margin-top: 15%;
+    min-width: 100px;
+    position: absolute;
+    bottom: 5%;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -80,5 +94,5 @@ body{
 #login-button:hover{
     scale: 1.1;
     cursor: pointer;
-    background-color: #f0a077;
+    background-color: #6A1B9A;
 }

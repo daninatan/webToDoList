@@ -4,9 +4,11 @@ let tasksList = {}
 let lastId = 1
 
 const addURL = "https://webtodolistbackend-production.up.railway.app/toDoList/addTask"
+const testeAddURL = "http://localhost:8080/toDoList/addTask"
 const getURL = "https://webtodolistbackend-production.up.railway.app/toDoList/getTasks"
+const testeGetURL = "http://localhost:8080/toDoList/getTasks"
 
-getTasks()
+getTasks();
 
 function getTasks(){
     fetch(getURL)

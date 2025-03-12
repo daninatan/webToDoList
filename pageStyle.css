@@ -2,7 +2,9 @@ body{
     background-color: rgb(44, 44, 44);
     display: flex;
     flex-direction: column;
-
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
 }
 
 #header{
@@ -11,24 +13,23 @@ body{
     justify-content: center;
     align-items: center;
     height: 15vh;
-    overflow: hidden;
+    margin-top: 3%;
 }
 
 #appTitle{
-    font-size: 5vw;
+    font-size: clamp(2rem, 10vw, 6rem);
     font-family: monospace;
     color: aliceblue;
 }
 
 #division-header-main{
     width: 90%;
-    margin-top: 0px;
+    margin-bottom: 5vw;
 }
 
 #main{
-    margin-top: 30px;
+    margin-top: 2rem;
     margin-bottom: 30px;
-    height: auto;
     padding-left: 30px;
     padding-right: 30px;
 }
@@ -62,15 +63,18 @@ body{
 
 #addBtn{
     display: flex;
+    justify-content: center;
     width: fit-content;
+    min-width: 70px;
     height: 5vh;
-    padding: 1vw;
+    min-height: 50px;
+    padding: 2vw;
     align-items: center;
     border: none;
     border-radius: 5px;
-    font-size: 2vw;
+    font-size: 1.5rem;
     transition: transform 0.1s ease;
-    background-color: chartreuse;
+    background-color: #8A2BE2;
     overflow: hidden;
 }
 
@@ -92,23 +96,26 @@ body{
     justify-content: space-between;
     flex-direction: row;
     width: 90%;
+    height: 10vh;
 }
 
 .task{
     color: aliceblue;
-    font-size: 3vw;
+    font-size: 2.5rem;
 }
 
 .removeBtn{
     font-size: 2vh;
     color: rgb(211, 211, 211);
-    width: fit-content;
-    padding: 1vw;
-    height: 5vhpx;
+    width: 8%;
+    min-width: fit-content;
+    height: 5vh;
     border: none;
     border-radius: 5px;
     background-color: rgb(164, 36, 36);
     overflow: hidden;
+    justify-items: center;
+    align-items: center;
 }
 
 .removeBtn:hover{
